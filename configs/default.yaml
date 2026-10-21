@@ -1,0 +1,23 @@
+project:
+  name: industrial-vision-ai
+  seed: 42
+
+data:
+  dataset_name: mvtec_ad
+  root: data/mvtec_ad
+  image_size: 224
+
+model:
+  feature_extractor: dinov2
+  anomaly_detector: patchcore
+  pretrained: true
+
+inference:
+  device: auto
+  batch_size: 1
+
+evaluation:
+  metrics:
+    - image_auroc
+    - image_average_precision
+    - pixel_auroc

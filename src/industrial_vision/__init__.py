@@ -1,0 +1,1 @@
+"""Industrial Vision AI package."""

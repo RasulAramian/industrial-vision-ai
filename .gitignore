@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets and model artifacts
+data/*
+!data/README.md
+artifacts/*
+!artifacts/.gitkeep
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Logs and reports
+logs/
+outputs/
+coverage.xml
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
